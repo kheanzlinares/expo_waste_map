@@ -20,6 +20,8 @@ export default function MapScreen() {
       zoom: 15,
     });
 
+    mapRef.current.addControl(new maplibregl.NavigationControl(), 'top-right');
+    
     return () => mapRef.current?.remove();
   }, []);
 
