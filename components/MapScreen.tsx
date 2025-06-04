@@ -36,6 +36,8 @@ export default function MapScreen() {
         (asset.AssetType === "PaperGarbage" && showPaper) ||
         (asset.AssetType === "GlassGarbage" && showGlass)
       ) {
+        
+        //creating custom marker
         const el = document.createElement("img");
         el.className = "map-marker";
         el.src =
